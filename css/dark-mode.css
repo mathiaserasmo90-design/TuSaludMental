@@ -1,0 +1,17 @@
+body.dark{
+  background:#0F172A;
+  color:white;
+}
+
+body.dark .glass{
+  background:rgba(15,23,42,.6);
+}
+
+body.dark nav a{
+  color:white;
+}
+
+body.dark .faq-question{
+  background:#1E293B;
+  color:white;
+}

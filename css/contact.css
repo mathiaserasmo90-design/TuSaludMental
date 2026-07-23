@@ -1,0 +1,46 @@
+.contact-cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  gap:30px;
+  padding:60px 8%;
+}
+
+/* CARD */
+.contact-card{
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.contact-card:hover{
+  transform:translateY(-6px);
+  border-color:#22c55e;
+}
+
+/* ICONO */
+.contact-icon{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+/* TEXTO */
+.contact-card p{
+  color:#9ca3af;
+  margin-bottom:20px;
+}
+
+/* BOTONES ABAJO */
+.contact-card a{
+  margin-top:auto;
+  width:max-content;
+}
+
+.contact-hero{
+  padding-top:140px; /* 👈 CLAVE */
+}
