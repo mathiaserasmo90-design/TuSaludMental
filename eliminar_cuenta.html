@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar mi cuenta y datos — Tu Salud Mental</title>
+<link rel="icon" href="assets/brain-icon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/legal.css">
+<style>
+  .delete-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 140px 20px 60px;
+    line-height: 1.65;
+  }
+  .delete-container h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: var(--primary);
+  }
+  .delete-container h2 {
+    font-size: 20px;
+    margin-top: 32px;
+    color: #FFFFFF;
+  }
+  .updated {
+    color: #94A3B8;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .option-box {
+    background: rgba(30,41,59,.5);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin: 16px 0;
+    border: 1px solid rgba(255,255,255,.1);
+  }
+  .option-box.recommended {
+    background: rgba(31,168,155,.1);
+    border: 1px solid var(--primary);
+  }
+  .badge-delete {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .delete-container ol {
+    padding-left: 22px;
+    color: #E2E8F0;
+  }
+  .delete-container p {
+    color: #E2E8F0;
+  }
+  .delete-container a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .delete-container label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 14px 0 4px;
+    color: #CBD5E1;
+  }
+  .delete-container input, .delete-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 8px;
+    background: #0F172A;
+    color: #FFF;
+    font-size: 14px;
+  }
+  .btn-submit {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--primary);
+    color: #fff;
+    padding: 11px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .btn-submit:hover {
+    background: var(--dark);
+    transform: translateY(-2px);
+  }
+  .fineprint {
+    font-size: 12.5px !important;
+    color: #94A3B8 !important;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar glass">
+  <div class="logo-container">
+    <img src="assets/TuSaludMental.png" class="logo" alt="Logo">
+    <div>
+      <h2>Tu Salud Mental</h2>
+      <span>MAVEX</span>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html#inicio">Inicio</a>
+    <a href="index.html#beneficios">Beneficios</a>
+    <a href="index.html#premium">Premium</a>
+    <a href="about.html">Sobre la App</a>
+    <a href="legal.html">Términos y Privacidad</a>
+    <a href="contact.html">Contacto</a>
+  </nav>
+
+  <div class="nav-buttons">
+    <a href="#" class="btn-primary">Descargar App</a>
+  </div>
+</header>
+
+<div class="delete-container">
+  <p style="margin-bottom:18px;">
+    <a href="legal.html">← Volver a Términos y Privacidad</a>
+  </p>
+
+  <h1>Eliminar mi cuenta y datos</h1>
+  <p style="font-size:18px; margin-top:-2px; color:#CBD5E1;">Tu Salud Mental — MAVEX</p>
+  <p class="updated">Última actualización: 12/09/2026</p>
+
+  <p>Puedes eliminar tu cuenta de <strong>Tu Salud Mental</strong> y todos los datos necesarios (seguimiento emocional, historial de chat con IA, reportes, configuraciones de cuenta y datos almacenados en Supabase) de dos maneras:</p>
+
+  <div class="option-box recommended">
+    <span class="badge-delete">MÁS RÁPIDO</span>
+    <h2 style="margin-top:0;">Opción 1 — Directamente desde la app</h2>
+    <ol>
+      <li>Abre la aplicación Tu Salud Mental</li>
+      <li>Ve a tu <strong>Perfil</strong> tocando tu avatar en la esquina superior</li>
+      <li>Selecciona <strong>Configuración de la Cuenta</strong></li>
+      <li>Toca el botón rojo <strong>"Eliminar cuenta permanentemente"</strong></li>
+      <li>Confirma la eliminación ingresando tu contraseña o confirmando con biometría</li>
+    </ol>
+    <p class="fineprint">Esto borra todo tu progreso y datos de forma inmediata e irreversible de la plataforma y de nuestras bases de datos en Supabase.</p>
+  </div>
+
+  <div class="option-box">
+    <h2 style="margin-top:0;">Opción 2 — Solicitud por correo web</h2>
+    <p>Envíanos tu solicitud indicando el correo electrónico con el que te registraste. Si no lo recuerdas, envíanos la mayor cantidad de datos posible para identificar tu cuenta.</p>
+
+    <label for="emailField">Tu correo registrado en la app</label>
+    <input type="email" id="emailField" placeholder="ejemplo@correo.com">
+
+    <label for="msgField">Mensaje</label>
+    <textarea id="msgField" rows="4" placeholder="Solicito la eliminación completa de mi cuenta y todos mis datos almacenados de Tu Salud Mental."></textarea>
+
+    <button class="btn-submit" onclick="sendRequest()">Enviar solicitud por correo</button>
+    <p class="fineprint">Procesamos las solicitudes manuales de eliminación dentro de un plazo máximo de 15 días. Recibirás una confirmación por correo una vez que tus datos y tu usuario hayan sido erradicados de Supabase.</p>
+  </div>
+
+  <h2>¿Qué se elimina exactamente?</h2>
+  <ul style="padding-left:22px; color:#E2E8F0;">
+    <li>Tu información personal y perfil (Nombre, edad, correo).</li>
+    <li>El historial de tu diario emocional y seguimiento de estados de ánimo.</li>
+    <li>Tus conversaciones privadas con el Asistente de IA.</li>
+    <li>Todos los registros internos de nuestra base de datos segura (Supabase).</li>
+  </ul>
+  <p style="font-size:13px; color:#94A3B8; margin-top:10px;">
+    Nota: Si realizaste alguna suscripción Premium, recuerda que debes cancelarla directamente desde tu cuenta de Google Play o Apple App Store, ya que la eliminación de la cuenta en nuestra plataforma no detiene los cobros gestionados por Google o Apple.
+  </p>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img src="assets/TuSaludMental.png" alt="Logo MAVEX" style="width:60px;">
+  </div>
+  <p style="color:#CBD5E1; margin-top:20px;">
+    © 2026 MAVEX — Tu Salud Mental.
+  </p>
+</footer>
+
+<script>
+function sendRequest(){
+  var email = document.getElementById('emailField').value.trim();
+  var msg = document.getElementById('msgField').value.trim() || 'Solicito la eliminación completa de mi cuenta y todos mis datos almacenados de Tu Salud Mental.';
+  var body = msg + (email ? ('\n\nCorreo registrado: ' + email) : '');
+  var mailto = 'mailto:mavexsoporte@gmail.com?subject=' + encodeURIComponent('Solicitud de eliminación de cuenta - Tu Salud Mental') + '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+}
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
