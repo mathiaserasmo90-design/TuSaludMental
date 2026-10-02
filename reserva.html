@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserva de Hora — Portal del Paciente | Tu Salud Mental</title>
+<link rel="icon" href="assets/brain-icon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .portal-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, rgba(10,14,23,1) 0%, rgba(19,27,43,1) 100%);
+  }
+
+  .portal-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+
+  .portal-card .icon-header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .portal-card h1 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+  }
+
+  .portal-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .input-group {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .input-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: rgba(10, 14, 23, 0.5);
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: rgba(10, 14, 23, 0.8);
+  }
+
+  .input-group input::placeholder {
+    color: #4a5568;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-submit:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+  }
+
+  .portal-footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .portal-footer a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <h3>Tu Salud Mental</h3>
+      <span>MAVEX</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre la App</a>
+      <a href="index.html#servicios">Beneficios</a>
+      <!-- <a href="reserva.html" class="active" style="color: var(--primary); font-weight: 700;">Reserva Hora</a> -->
+      <a href="legal.html">Privacidad</a>
+      <a href="legal.html#contacto">Contacto</a>
+    </nav>
+    <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" class="btn-primary" target="_blank">Descargar App</a>
+  </div>
+</header>
+
+<div class="portal-container">
+  <div class="portal-card">
+    <div class="icon-header">👨‍⚕️</div>
+    <h1>Portal del Paciente</h1>
+    <p>Ingresa para agendar, modificar o cancelar tus horas con nuestros especialistas en salud mental.</p>
+
+    <div class="input-group">
+      <label for="rut">RUT o Pasaporte</label>
+      <input type="text" id="rut" placeholder="Ej: 12.345.678-9">
+    </div>
+
+    <button class="btn-submit" onclick="alert('Esta es una demostración. En el futuro, aquí se conectará con el sistema de reservas y la IA de MAVEX.')">Ingresar</button>
+
+    <div class="portal-footer">
+      Al ingresar aceptas nuestros <a href="legal.html">Términos y Privacidad</a>.<br>
+      ¿No tienes cuenta? <a href="#">Regístrate aquí</a>.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>Tu Salud Mental</h3>
+      <p>by MAVEX</p>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 MAVEX. Todos los derechos reservados.
+    </div>
+    <div class="footer-links">
+      <a href="legal.html">Privacidad</a>
+      <a href="legal.html">Términos</a>
+      <a href="legal.html#contacto">Soporte</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
