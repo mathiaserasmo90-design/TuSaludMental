@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Salud Mental | Prototipo Profesional</title>
+  <title>Tu Salud Mental | Edición Especial Halloween 🎃</title>
+  <link rel="icon" href="assets/halloween-globo.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,17 +12,27 @@
 </head>
 <body>
 
+  <!-- Halloween Top Banner -->
+  <div class="halloween-banner">
+    <span>🎃 <strong>Edición Especial de Halloween:</strong> Enfrenta tus miedos con calma. Descubre nuestros 14 tests psicológicos y el nuevo globo mágico de Mente Verde ✨</span>
+  </div>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="nav-container">
-      <div class="logo">
-        <h3>Tu Salud Mental</h3>
-        <span>MAVEX</span>
-      </div>
+      <a href="index.html" class="logo">
+        <img src="assets/halloween-globo.png" alt="Logo Tu Salud Mental Halloween" class="nav-logo-img" width="44" height="44">
+        <div>
+          <h3>Tu Salud Mental <span class="halloween-tag">🎃</span></h3>
+          <span>MAVEX · MENTE VERDE</span>
+        </div>
+      </a>
       <nav class="nav-links">
         <a href="index.html" class="active">Inicio</a>
         <a href="index.html#about">Sobre la App</a>
         <a href="index.html#servicios">Beneficios</a>
+        <a href="index.html#app">Tests y Galería</a>
+        <a href=" index.html#planes">Planes</a>
         <!-- <a href="reserva.html" style="color: var(--primary); font-weight: 700;">Reserva Hora</a> -->
         <a href="legal.html">Privacidad</a>
         <a href="legal.html#contacto">Contacto</a>
@@ -33,26 +44,50 @@
   <!-- Hero Section -->
   <section class="hero" id="inicio">
     <div class="hero-overlay"></div>
+    <!-- Elementos flotantes decorativos de Halloween -->
+    <div class="spooky-particles" aria-hidden="true">
+      <span class="spooky-float f1">🎃</span>
+      <span class="spooky-float f2">👻</span>
+      <span class="spooky-float f3">🦇</span>
+      <span class="spooky-float f4">✨</span>
+      <span class="spooky-float f5">🍄</span>
+    </div>
+
     <div class="hero-content">
-      <div class="hero-text">
-        <span class="greeting">No estás solo.</span>
-        <h1>Tu Salud Mental<br><span class="highlight">Bienestar Inteligente</span></h1>
-        <p>Una plataforma diseñada para acompañarte, escucharte y ayudarte a mejorar tu bienestar emocional mediante herramientas científicas y soporte de IA disponible 24/7.</p>
-        
-        <div class="hero-actions">
-          <a href="#" class="btn-primary">Descargar en App Store →</a>
-          <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" class="btn-outline" target="_blank">Google Play</a>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="greeting">🎃 No estás solo.</span>
+          <h1>Tu Salud Mental<br><span class="highlight">Que ningún miedo apague tu paz</span></h1>
+          <p>En esta temporada de Halloween, recuerda que los fantasmas de la ansiedad y el estrés se enfrentan mejor acompañado. Conoce más sobre ti con nuestros tests científicos y apóyate en nuestra IA disponible 24/7.</p>
+          
+          <div class="hero-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" class="btn-primary" target="_blank">👻 Descargar en Google Play →</a>
+            <a href="#app" class="btn-outline">Explorar Tests y Vistas</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="globe-glow"></div>
+          <img src="assets/halloween-globo.png"
+               alt="Globo mágico de Halloween con cerebro y hoja de Mente Verde - Tu Salud Mental"
+               class="hero-globe-img"
+               fetchpriority="high"
+               width="460"
+               height="460">
+          <div class="globe-caption">
+            <span>🔮 Edición de Temporada · Mente Verde</span>
+          </div>
         </div>
       </div>
       
       <!-- Logo Banner -->
       <div class="trusted-by">
-        <p>Tecnologías que respaldan tu seguridad</p>
+        <p>Tecnologías que respaldan tu seguridad y privacidad</p>
         <div class="logos">
-          <span>Supabase</span>
-          <span>Google Cloud</span>
-          <span>OpenAI</span>
-          <span>Stripe</span>
+          <span>🛡️ Supabase</span>
+          <span>☁️ Google Cloud</span>
+          <span>🤖 IA Avanzada</span>
+          <span>🔒 Encriptación Total</span>
         </div>
       </div>
     </div>
@@ -62,21 +97,24 @@
   <section class="about" id="about">
     <div class="about-container">
       <div class="about-text">
-        <span class="section-subtitle">SOBRE LA APP</span>
+        <span class="section-subtitle">SOBRE LA APP · MENTE VERDE</span>
         <h2>Construyendo soluciones para tu bienestar diario</h2>
-        <p>Somos una plataforma apasionada por democratizar la salud mental. Especializados en crear herramientas escalables y accesibles. Con un fuerte enfoque en el diseño centrado en el usuario y la privacidad, ayudamos a miles de personas a encontrar tranquilidad en su día a día.</p>
+        <p>Somos una plataforma apasionada por democratizar la salud mental. Especializados en crear herramientas escalables, tests psicológicos confiables y acompañamiento emocional continuo. Con un fuerte enfoque en el diseño centrado en el usuario y la privacidad, ayudamos a miles de personas a encontrar tranquilidad en su día a día.</p>
         
         <div class="stats">
           <div class="stat"><span class="icon">🛡️</span> Privacidad Total</div>
-          <div class="stat"><span class="icon">🤖</span> IA Entrenada</div>
-          <div class="stat"><span class="icon">📈</span> Seguimiento Diario</div>
-          <div class="stat"><span class="icon">🌍</span> Disponible Mundialmente</div>
+          <div class="stat"><span class="icon">🤖</span> IA Entrenada 24/7</div>
+          <div class="stat"><span class="icon">🧠</span> 14 Tests Psicológicos</div>
+          <div class="stat"><span class="icon">🌍</span> Disponible en Google Play</div>
         </div>
         
         <a href="#planes" class="btn-primary">Ver Planes Premium ⬇</a>
       </div>
 
       <div class="about-card">
+        <div class="about-card-preview">
+          <img src="assets/halloween-hero.jpeg" alt="Ambiente nocturno de Halloween Tu Salud Mental" loading="lazy" width="360" height="220">
+        </div>
         <div class="info-row">
           <span class="icon">📍</span>
           <div>
@@ -92,17 +130,10 @@
           </div>
         </div>
         <div class="info-row">
-          <span class="icon">📱</span>
+          <span class="icon">🎃</span>
           <div>
-            <h4>Versión</h4>
-            <p>1.2.0 (Premium / Free)</p>
-          </div>
-        </div>
-        <div class="info-row">
-          <span class="icon">🌐</span>
-          <div>
-            <h4>Idiomas</h4>
-            <p>Español, Inglés</p>
+            <h4>Versión Actual</h4>
+            <p>Edición Halloween (Premium / Free)</p>
           </div>
         </div>
       </div>
@@ -119,23 +150,96 @@
     <div class="services-grid">
       <div class="service-card">
         <div class="card-icon">😌</div>
-        <h3>Reducir Ansiedad</h3>
-        <p>Ejercicios guiados de respiración y herramientas con base científica para calmar tu mente.</p>
+        <h3>Reducir Ansiedad y Fobias</h3>
+        <p>Ejercicios guiados de respiración y herramientas con base científica para calmar tus miedos y tu mente.</p>
       </div>
       <div class="service-card">
         <div class="card-icon">🌙</div>
         <h3>Higiene del Sueño</h3>
-        <p>Sonidos relajantes, meditaciones y rutinas diseñadas para ayudarte a dormir mejor.</p>
+        <p>Sonidos relajantes, meditaciones y rutinas nocturnas diseñadas para ayudarte a dormir sin pesadillas.</p>
       </div>
       <div class="service-card">
         <div class="card-icon">🤖</div>
         <h3>Asistente de IA</h3>
-        <p>Chatbot conversacional disponible las 24 horas para escucharte sin juicios.</p>
+        <p>Chatbot conversacional disponible las 24 horas para escucharte sin juicios cuando más lo necesitas.</p>
       </div>
       <div class="service-card">
         <div class="card-icon">📊</div>
-        <h3>Métricas Inteligentes</h3>
-        <p>Análisis personalizados y gráficos detallados para entender la evolución de tu estado de ánimo.</p>
+        <h3>Tests y Métricas</h3>
+        <p>Evalúa TDAH, Depresión, TAG, TOC y más con análisis personalizados y gráficos de evolución.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects / App Screens with New Prototype Images -->
+  <section class="projects" id="app">
+    <div class="section-header">
+      <span class="section-subtitle">DESCUBRE MENTE VERDE · TU SALUD MENTAL</span>
+      <h2>Cuidar de tu mente nunca fue tan sencillo</h2>
+      <p style="color: var(--text-muted); margin-top: 12px; max-width: 650px;">Conoce más sobre ti, reduce el estrés y encuentra la tranquilidad que necesitas con nuestros tests psicológicos e inteligencia artificial.</p>
+    </div>
+
+    <!-- Banner Principal de Tests Premium -->
+    <div class="featured-banner-card">
+      <img src="assets/banner-tests-premium.png"
+           alt="Tu mente importa, tu bienestar también - Nuestros Tests Premium: Trauma Infantil, TDAH, Depresión, Fobias, TEA, TOC, TAG, Procesamiento Sensorial"
+           loading="lazy"
+           width="1200"
+           height="800">
+      <div class="featured-banner-caption">
+        <div>
+          <span class="badge-halloween">🎃 Incluye Test de Fobias, Ansiedad (TAG) y más</span>
+          <h3>14 Tests Psicológicos con Reportes Personalizados</h3>
+          <p>Tests científicos, resultados 100% privados y recomendaciones adaptadas a tu ritmo.</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" target="_blank" class="btn-primary">Explorar Tests en la App →</a>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/promo-cuidar-mente.jpeg"
+               alt="Cuidar de tu mente nunca fue tan sencillo - Conócete mejor, maneja tu estrés, mejora tu bienestar"
+               loading="lazy"
+               width="600"
+               height="600">
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Autoconocimiento</span>
+          <h3>¡Cuidar de tu mente es sencillo!</h3>
+          <p>Encuentra la tranquilidad que necesitas desde tu celular con herramientas prácticas.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/promo-tests.jpeg"
+               alt="¿Cómo te sientes hoy? Descúbrelo con nuestros test psicológicos"
+               loading="lazy"
+               width="600"
+               height="600">
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Evaluación Emocional</span>
+          <h3>¿Cómo te sientes hoy?</h3>
+          <p>Evalúa indicadores de TDAH, Depresión, TAG y comprende tus emociones paso a paso.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/promo-planes.jpeg"
+               alt="Elige el plan ideal para tu bienestar - Premium e IA Intensiva"
+               loading="lazy"
+               width="600"
+               height="600">
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Planes Accesibles</span>
+          <h3>Elige el plan ideal para ti</h3>
+          <p>Desde prueba gratuita de 3 días hasta acompañamiento intensivo con Chat IA.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -143,14 +247,15 @@
   <!-- Planes Premium -->
   <section class="pricing" id="planes">
     <div class="section-header">
-      <span class="section-subtitle">PLANES PREMIUM</span>
-      <h2>Elige el plan ideal para ti</h2>
+      <span class="section-subtitle">PLANES PREMIUM · OFERTA DE TEMPORADA 🎃</span>
+      <h2>Elige el plan ideal para tu bienestar</h2>
       <p style="color: var(--text-muted); margin-top: 15px;">Desbloquea todo el potencial de la aplicación y lleva tu bienestar al siguiente nivel.</p>
     </div>
 
     <div class="pricing-grid">
       <!-- Plan Premium -->
       <div class="pricing-card">
+        <div class="plan-offer-tag">🔮 OFERTA DE LANZAMIENTO: $4.000 el 1er mes</div>
         <h3>Premium</h3>
         <p class="plan-desc">Tu mejor versión empieza aquí</p>
         <div class="price">
@@ -163,14 +268,15 @@
           <li><span class="check">✅</span> Ejercicios premium y sonidos relajantes</li>
           <li><span class="check">✅</span> 14 tests premium desbloqueados</li>
         </ul>
-        <a href="#" class="btn-primary btn-block">Suscribirme ahora</a>
-        <p class="trial-text">✨ Probar Premium gratis por 3 días</p>
+        <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" target="_blank" class="btn-primary btn-block">Suscribirme ahora</a>
+        <p class="trial-text">✨ Probar Premium gratis por 3 días · Cancela cuando quieras</p>
       </div>
 
       <!-- Plan IA Intensiva -->
       <div class="pricing-card highlight-card">
-        <div class="badge">Para quienes usan el Chat IA mucho más</div>
+        <div class="badge">⚡ Para quienes usan el Chat IA mucho más</div>
         <h3>IA Intensiva</h3>
+        <p class="plan-desc">Acompañamiento profundo y continuo</p>
         <div class="price">
           <span class="currency">$</span>10.000<span class="period"> CLP/mes</span>
         </div>
@@ -183,56 +289,27 @@
           <li><span class="check">✅</span> Ejercicios premium y sonidos relajantes</li>
           <li><span class="check">✅</span> Historial completo de conversaciones</li>
         </ul>
-        <a href="#" class="btn-primary btn-block" style="background-color: #10B981; border-color: #10B981;">Suscribirme a IA Intensiva</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects / App Screens -->
-  <section class="projects" id="app">
-    <div class="section-header">
-      <span class="section-subtitle">VISTAS DE LA APP</span>
-      <h2>Explora la Interfaz <a href="#" class="view-all">Ver Más →</a></h2>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-img placeholder-1">Vista del Diario</div>
-        <div class="project-info">
-          <h3>Diario Emocional</h3>
-          <p>Registro de estados de ánimo</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img placeholder-2">Vista del Chat</div>
-        <div class="project-info">
-          <h3>Chat con IA</h3>
-          <p>Asistente virtual seguro</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img placeholder-3">Vista de Reportes</div>
-        <div class="project-info">
-          <h3>Panel de Métricas</h3>
-          <p>Gráficos mensuales</p>
-        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" target="_blank" class="btn-primary btn-block" style="background-color: #10B981; border-color: #10B981;">Suscribirme a IA Intensiva</a>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
-    <h2>Empieza hoy tu transformación emocional</h2>
-    <p>¿Tienes un objetivo en mente? Nos encantaría acompañarte en el proceso. Descarga la aplicación y da el primer paso.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" class="btn-primary" target="_blank">Descargar Ahora →</a>
+    <div class="cta-inner">
+      <img src="assets/halloween-globo.png" alt="Icono Halloween Tu Salud Mental" class="cta-icon" loading="lazy" width="90" height="90">
+      <h2>Empieza hoy tu transformación emocional 🎃</h2>
+      <p>¿Tienes un objetivo en mente o quieres conocerte mejor? Nos encantaría acompañarte en el proceso. Descarga la aplicación en Google Play y da el primer paso.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.mavex.tusaludmental" class="btn-primary" target="_blank">Descargar Ahora en Google Play →</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-logo">
-        <h3>Tu Salud Mental</h3>
-        <p>by MAVEX</p>
+        <h3>Tu Salud Mental 🎃</h3>
+        <p>by MAVEX · Mente Verde</p>
       </div>
       <div class="footer-copy">
         &copy; 2026 MAVEX. Todos los derechos reservados.
